@@ -27,6 +27,7 @@ scroll-behavior: smooth;
 .heading{
     font: 2.5rem 'Roboto';
     font-weight: 800;
+    color: var(--light-red);
 }
 
 .Para{
@@ -87,26 +88,28 @@ scroll-behavior: smooth;
 }
 
 .card{
-    background: var(--dark-grey);
+    background: rgba(228, 228, 228, 0.308);
+    animation-delay: 2000;
     color: black;
-    width: 80%;
-    margin: 2% 0 0 4%;
-    border: 2px solid white;
-    border-radius: 1px 0 1px 0;
+    border-radius: 7px;
+    width: 40%;
+    margin: 2% 0 0 2%;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .card h4{
     margin-top: 0%;
-    font: 25px 'secular';
+    font: 2rem 'Roboto';
+    font-weight: 600;
     color: black;
 }
 
 .sub-card{
     display: flex;
     align-items: center;
-    margin-left: 1.1%;
+    margin-left: 0.3%;
+    margin-top: 0.3%;
 }
 
 .mini-icon-1{
@@ -120,20 +123,25 @@ scroll-behavior: smooth;
 }
 
 .sub-card span{
-    font: 12px 'Segoe Ui';
+    font: 12px 'Patrick';
 }
 
 .main-card {
     margin: 1% 0 0 1.1%;
+    border-top: 1px solid rgba(0, 0, 0, 0.366);
 }
 
 .main-card p{
-    font: 18px 'rj-medium';
+    font: 1.5rem 'Roboto';
+    width: 95%;
+    margin-top: 2%;
+    letter-spacing: 1px;
 }
 
 .main-card span{
     float: right;
-    font-size: 12px;
+    font: 1rem 'Roboto';
+    font-weight: 900;
 }
 
 
@@ -141,4 +149,11 @@ scroll-behavior: smooth;
     width: 2%;
     margin: 6% 0 0 45%;
     animation-iteration-count: infinite;
+}
+
+#story-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid white; */
+    margin-bottom: 5%;
 }

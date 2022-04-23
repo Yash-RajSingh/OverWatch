@@ -1,18 +1,29 @@
+.header{
+    position: static;
+}
+.pseudobody{
+    /* border: 2px solid white; */
+    width: 96%;
+}
 .profile-card{
-    background: var(--dark-red);
-    border-radius: 20px 35px 35px 20px;
-    width: 40%;
+    background: #8080804c;
+    width: 46%;
+    font-weight: 900;
+    color: var(--black);
     margin-left: 2%;
-    padding: 10px;
+    margin-top: 2%;
+    padding: 20px;
 }
 .profile-card h3{
-    font: 30px 'russo';
+    font: 1.7rem 'Roboto';
+    font-weight: 700;
 }
 
 .profile-card p{
-    font: 25px 'curly';
+    font: 1.3rem 'Roboto';
     letter-spacing: 2px;
     margin: 1% 0 0 4%;
+    font-weight: 900;
     color: var(--light-grey);
 }
 .mini-icon-1{
@@ -56,31 +67,37 @@
 }
 
 .sub-card span{
-    font: 12px 'Segoe Ui';
+    font: 12px 'Roboto';
+    font-weight: 900;
 }
 
 .main-card {
     margin: 1% 0 0 1.1%;
 }
 .main-card p{
-    font: 18px 'rj-medium';
+    font: 18px 'Roboto';
+    font-weight: 900;
 }
 .main-card span{
     float: right;
     font-size: 12px;
 }
 
-#nn{
-    font: 45px 'russo';
-    margin: 2% 0 0 2%;
-    padding-bottom: 10px;
-    color: var(--light-red);
+#heading{
+    font: 2.5rem 'Roboto';
+font-weight: 800;
+color: var(--light-red);
+}
+
+.sec{
+    margin-top: 3%;
 }
 
 #zones{
-    background: var(--light-grey);
+    background: #8080804c;
     width: max-content;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 2px;
     margin-top: 1%;
     /* padding: 10px; */
     margin-left: 2%;
@@ -92,7 +109,7 @@
     color: black;
     margin-top: 5px;
     padding: 5px 10px ;
-    font: 25px 'sync';
+    font: 25px 'Roboto';
 }
 
 .mini-icon-2{

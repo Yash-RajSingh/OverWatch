@@ -118,7 +118,7 @@ body {
   width: 30px;
 }
 #profile {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -175,6 +175,6 @@ body {
   padding: 5px 15px;
   font-size: 20px;
   border: 2px solid black;
-  border-radius: 8px;
-  margin: 35% 0 0 -40%;
+  border-radius: 3px;
+  margin: 120px 0 0 -40%;
 }
