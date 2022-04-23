@@ -1,0 +1,180 @@
+:root {
+  --dark-red: #731010;
+  --light-red: #a80000;
+  --black: #1c1c1c;
+  --light-grey: #d4d4d4;
+  --dark-grey: #707070;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "ops";
+  src: url(fonts/BlackOpsOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Dancing";
+  src: url(fonts/DancingScript-Medium.ttf);
+}
+
+/* @font-face {
+  font-family: "Comforta";
+  src: url(fonts/Comfortaa-VariableFont_wght.ttf);
+} */
+
+@font-face {
+  font-family: "Patrick";
+  src: url(fonts/PatrickHand-Regular.ttf);
+}
+@font-face {
+  font-family: "Basca";
+  src: url(fonts/athabasca-ex-el.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/RobotoSlab-ExtraLight.ttf);
+}
+
+/* BODY STYLYING */
+body {
+  background: var(--black);
+}
+
+/* HEADER STYLING */
+.header {
+  /* border: 2px solid white; */
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(53, 53, 53, 0.337);
+  /* border-radius: 0px 0px 10px 10px; */
+}
+.logo {
+  width: 4%;
+  margin-top: 5px;
+}
+.header h1 {
+  font-size: 55px;
+  color: var(--light-grey);
+  -webkit-text-stroke: 0.2px var(--light-red);
+  font-family: "ops";
+  letter-spacing: 3px;
+  padding-right: 5%;
+  /* border: 2px solid white; */
+}
+
+/* SIDEBAR STYLING */
+#sidebar {
+  background: var(--light-red);
+  position: fixed;
+  height: 100vh;
+  width: 2.1%;
+  z-index: 10000;
+}
+#menu-icon {
+  width: 20px;
+  margin: 10px 5px;
+  float: right;
+}
+#sidebar ul {
+  margin: 30% 0 0 0;
+}
+#sidebar-container {
+  display: none;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 40px 10px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar-item h4 {padding-left: 5px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+
+.siderbar-icon {
+  width: 30px;
+}
+#profile {
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30% 0 0 0%;
+}
+#profile button {
+  background: var(--dark-red);
+  color: var(--light-grey);
+  padding: 5px 15px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 0 25%;
+  margin-top: 10%;
+  /* margin: 50% 0 0 25%; */
+}
+#profile img {
+  margin-left: 5%;
+}
+#profile h3 {
+  text-align: center;
+  font: 1.3rem "Roboto";
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*---------Custom Scrollbar Styling---------*/
+::-webkit-scrollbar {
+  width: 0.5vw;
+  background: var(--dark-grey);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-red);
+  border: 0.5px solid var(--dark-red);
+  background-clip: padding-box;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ee0c0cd5;
+}
+
+.pseudobody {
+  /* border: 2px solid rgb(255, 0, 170); */
+  width: 97%;
+  margin: 1% 0 0 auto;
+}
+
+#logout {
+  background: var(--dark-red);
+  color: var(--light-grey);
+  padding: 5px 15px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 35% 0 0 -40%;
+}

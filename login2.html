@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OVERWATCH</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Mli'>
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+   <!-- SIDEBAR -->
+<!-- 
+   <div id="sidebar">
+    <img src="assets/icons/ham.png" id="menu-icon" />
+    <div id="sidebar-container">
+      <ul>
+          <li>
+          <div class="sidebar-item">
+              <img src="assets/icons/home.png" alt="icon" class="siderbar-icon" />
+              <h4> Home</h4>
+          </div>
+          </li>
+          <li>
+          <div class="sidebar-item">
+              <img src="assets/icons/info.png" alt="icon" class="siderbar-icon"/> <h4> Instructions</h4>
+          </div>
+          </li>
+          <li>
+          <div class="sidebar-item">
+              <img src="assets/icons/danger.png" alt="icon" class="siderbar-icon" />
+              <h4> Danger Zones</h4>
+          </div>
+          </li>
+          <li>
+          <div class="sidebar-item">
+              <img
+              src="assets/icons/posts.png"
+              alt="icon"
+              class="siderbar-icon"
+              /> <h4> Stories</h4>
+          </div>
+          </li>
+          <li>
+          <div class="sidebar-item">
+              <img
+              src="assets/icons/about.png"
+              alt="icon"
+              class="siderbar-icon"
+              /> <h4> About</h4>
+          </div>
+          </li>
+      </ul>
+      <button>Login</button>
+    </div>
+  </div> -->
+
+
+  <!-- MAIN BODY -->
+    <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" id="lemail" autocomplete="off" placeholder="Email Address" required >
+              </div>
+              <div class="field">
+                <input type="password" id="lpass" autocomplete="off" placeholder="Password" required>
+              </div>
+              <br>
+              <div class="pass-link"><a href="#">Forgot password?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+              <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+            </form>
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" id="sname" autocomplete="off" placeholder="Username" required>
+              </div>
+              <div class="field">
+                <input type="text" id="semail" autocomplete="off" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" id="spass" autocomplete="off" placeholder="Password" required>
+              </div>
+              <div class="field">
+                <input type="text" id="secquestion" autocomplete="off" placeholder="Security Question" required>
+              </div>
+              <div class="field">
+                <input type="password" id="secanswer" autocomplete="off" placeholder="Security Answer" required>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="response">
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/display.js"></script>
+
+</body>
+</html>

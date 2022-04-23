@@ -1,0 +1,164 @@
+.pseudobody{
+    display: flex;
+    color: var(--light-red);
+}
+
+.header{
+    position: static;
+}
+
+/* MAIN BODY LEFT STYLING */
+.main-left{
+    border-left: 0.5px solid rgb(114, 114, 114);
+    /* border: 2px solid pink; */
+    width: 80%;
+}
+.story{
+    /* border: 2px solid yellow; */
+}
+.main-left h4{
+    font: 35px 'bebas';
+    margin-left: 1%;
+}
+
+#experience{
+    background-color: var(--black);
+    color: white;
+    width: 95%;
+    border: 0px;
+    resize: none;
+    padding: 10px;
+    height: 80px;
+}
+
+.substory{
+    /* border: 2px solid white; */
+    border-top: 0.2px solid grey;
+    padding: 5px;
+    width: 90%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+#story span{
+    margin: 3% 0 0 2%;
+    font-size: 19px;
+}
+
+.substory-1{
+    /* border: 2px solid yellow; */
+    margin-left: 5%;
+    width: 40%;
+}
+
+#date{
+    background: var(--light-red);
+    color: white;
+    padding: 5px;
+    outline: none;
+    border: 0.2px solid black;
+    margin: 2% 0 0 2%;
+}
+
+
+#location{
+    width: 80%;
+    height: 25px;
+    background: var(--light-red);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 2% 0 0 2%;
+}
+#location::placeholder{
+    color: white;
+}
+
+#story button{
+    float: right;
+    background: var(--dark-red);
+    color: white;
+    border: 1px solid black;
+    padding: 7px 15px;
+    border-radius: 15px;
+    margin: 0 10% 0 0;
+}
+
+.story-display{
+    margin-top: 4%;
+    border-top: 0.5px solid rgb(114, 114, 114);
+}
+.story-display h4{
+    margin-top: 2%;
+}
+
+
+.card{
+    background: var(--dark-grey);
+    color: black;
+    width: 80%;
+    margin: 2% 0 0 4%;
+    border: 2px solid white;
+    border-radius: 20px 0 20px 0;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.card h4{
+    margin-top: 0%;
+    font: 25px 'secular';
+    color: black;
+}
+
+.sub-card{
+    display: flex;
+    align-items: center;
+    margin-left: 1.1%;
+}
+.mini-icon-1{
+    margin-top: -4%;
+    height: 20px;
+    float: right;
+}
+.mini-icon{
+    height: 12px;
+}
+
+.sub-card span{
+    font: 12px 'Segoe Ui';
+}
+
+.main-card {
+    margin: 1% 0 0 1.1%;
+}
+.main-card p{
+    font: 18px 'rj-medium';
+}
+.main-card span{
+    float: right;
+    font-size: 12px;
+}
+
+/* MAIN BODY RIGHT STYLING */
+.main-right{
+    border-left: 0.5px solid rgb(114, 114, 114);
+    width: 15%;
+}
+
+.main-right h4{
+    font: 1.5rem 'Roboto';
+    /* text-decoration: underline; */
+    text-align: center;
+}
+
+#stats-container{
+    padding: 10px;
+}
+#stats-container p{
+    font: 23px 'quick';
+    font-weight: 900;
+}
+#stats-container b{
+    color: white;
+    font-size: 30px;
+}

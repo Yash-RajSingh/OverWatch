@@ -1,0 +1,144 @@
+.pseudobody{
+    display: flex;
+    margin-top: 0;
+    color: var(--light-red);
+}
+:root{
+scroll-behavior: smooth;
+
+}
+/* MAIN BODY LEFT STYLING */
+.main-left{
+    /* border: 0.5px solid #000000; */
+    padding-top: 0;
+    margin-top: 5%;
+    width: 100%;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.container{
+    /* border: 2px solid green; */
+    margin-top: 2%;
+    width: 98%;
+    margin-left: auto;
+}
+
+.heading{
+    font: 2.5rem 'Roboto';
+    font-weight: 800;
+}
+
+.Para{
+    font: 1.3rem 'Roboto';
+    color: var(--light-grey);
+    width: 55%;
+    margin-top: 3%;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.Para b{
+    font: 1.3rem 'Roboto';
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+#name{
+    margin-top: 200px;
+}
+#title{
+    font-size: 2.2rem;
+    color: var(--light-red);
+}
+
+#unity{
+    float: right;
+    width: 25%;
+    margin: 0 8% 0 0;
+    margin-top: -70px;
+    padding: 15px;
+    border-radius: 20%;
+}
+
+.container1{
+    margin-top: 2%;
+}
+
+.container2{
+    margin-top: 13%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map{
+    height: 90vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+    border: 0.15rem solid var(--light-red);
+}
+
+#quote{
+    font: 3rem 'Dancing';
+    letter-spacing: 5px;
+    color: var(--light-red);
+    margin: 5% 0 0 2%;
+    -webkit-text-stroke: 0.3px var(--light-grey);
+}
+
+.card{
+    background: var(--dark-grey);
+    color: black;
+    width: 80%;
+    margin: 2% 0 0 4%;
+    border: 2px solid white;
+    border-radius: 1px 0 1px 0;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.card h4{
+    margin-top: 0%;
+    font: 25px 'secular';
+    color: black;
+}
+
+.sub-card{
+    display: flex;
+    align-items: center;
+    margin-left: 1.1%;
+}
+
+.mini-icon-1{
+    margin-top: -4%;
+    height: 20px;
+    float: right;
+}
+
+.mini-icon{
+    height: 12px;
+}
+
+.sub-card span{
+    font: 12px 'Segoe Ui';
+}
+
+.main-card {
+    margin: 1% 0 0 1.1%;
+}
+
+.main-card p{
+    font: 18px 'rj-medium';
+}
+
+.main-card span{
+    float: right;
+    font-size: 12px;
+}
+
+
+.down{
+    width: 2%;
+    margin: 6% 0 0 45%;
+    animation-iteration-count: infinite;
+}

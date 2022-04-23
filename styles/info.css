@@ -1,0 +1,143 @@
+
+.pseudobody{
+    /* border: 2px solid rgb(255, 0, 170); */
+    list-style: flex;
+    display: flex;
+    /* text-align: center; */
+    color: var(--dark-grey);
+    width: 97%;
+    margin: 1% 0 0 auto;
+}
+
+.header{
+    position: static;
+}
+
+#left{
+    text-align: left;
+    /* color: red; */
+    /* border: 2px solid pink; */
+}
+
+#red{
+    color: red;
+}
+
+.main-left{
+    /* border-left: 0.5px solid rgb(114, 114, 114); */
+    /* border: 2px solid pink; */
+    width: 80%;
+}
+.motto{
+    /* text-align: center; */
+    display: flex;
+    padding: 20px;
+    margin-top: 2%;
+}
+.main-left h4{
+    font: 35px 'bebas';
+    margin-left: 1%;
+    color: var(--light-red);
+}
+
+.main-right{
+    border-left: 0.5px solid rgb(114, 114, 114);
+    width: 20%;
+}
+
+.main-right h4{
+    font: 35px 'bebas';
+    /* text-align: center; */
+    color: var(--light-red);
+
+}
+
+#stats-container{
+    padding: 10px;
+}
+#stats-container p{
+    font: 23px 'quick';
+    font-weight: 900;
+    color: var(--light-red);
+}
+#stats-container b{
+    color: white;
+    font-size: 30px;
+}
+
+.headname h3{
+    /* border: 2px solid white; */
+    font: 35px 'bebas';
+    margin-left: 1%;
+    color: var(--light-red);
+}
+
+#left p{
+    font: 22px 'rj-medium';
+    margin-left: 2%;
+    color: var(--dark-grey);
+    width: 90%;
+    
+}
+.comment{
+    margin-top: 3%;
+}
+.comment h2{
+    color: var(--light-grey);
+    font: 45px 'secular';
+}
+.comment h4{
+    color: white;
+    margin-top: 4%;
+    font-size: 25px;
+}
+.motto h3{
+    font: 35px 'rj-sm';
+    width: 95%;
+    /* text-align: center; */
+
+}
+.m-left{
+    /* border: 2px solid white; */
+    width: 70%;
+    padding: 10px;
+}
+
+
+.m-right{
+    /* border: 2px solid white; */
+    width: 30%;
+}
+
+
+.m-right img{
+    width: 100%;
+    margin: 15% 0 0 0;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
+.headname{
+    margin-top: 3%;
+}
+
+#mtext{
+    color: var(--light-grey);
+    font: 45px 'ops';
+    margin-top: 5%;
+}
+
+#limg{
+    width: 60%;
+    border: 0;
+}
+
+.hname{
+    font-size: 55px;
+    color: var(--light-grey);
+    -webkit-text-stroke: 0.2px var(--light-red);
+    font-family: 'ops';
+    text-align: center;
+    margin-top: 2%;
+    letter-spacing: 5px;
+}
