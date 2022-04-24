@@ -69,6 +69,7 @@ const zonesAdder = (a,b) =>{
         fillOpacity: 0.5,
         radius: 10000
     }).addTo(mymap);
+    circle.bindPopup("<b>Caution! Danger Zone!</b>").openPopup();
 }
 
 
