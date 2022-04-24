@@ -7,7 +7,7 @@
 }
 .profile-card{
     background: #8080804c;
-    width: 46%;
+    width: 40%;
     font-weight: 900;
     color: var(--black);
     margin-left: 2%;
@@ -37,14 +37,14 @@
 
 
 .card{
-    background: var(--dark-grey);
+    background: #8080804c;
+    animation-delay: 2000;
     color: black;
-    width: 50%;
+    border-radius: 7px;
+    width: 40%;
     margin: 2% 0 0 2%;
-    border: 2px solid white;
-    border-radius: 20px 0 20px 0;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
 }
 .card h4{
     margin-top: 0%;
@@ -95,7 +95,7 @@ color: var(--light-red);
 
 #zones{
     background: #8080804c;
-    width: max-content;
+    width: 40%;
     padding: 20px;
     border-radius: 2px;
     margin-top: 1%;

@@ -87,16 +87,16 @@ const getZones = async () =>{
 getZones();
 
 
-const reupdate = () =>{
-    const dispDelay = setTimeout(disp, 1000);
-    function disp() {
-        updateStats();
-    }
-    function stopdisp() {
-        clearTimeout(disp);
-    }
-    stopdisp();  
-}
+// const reupdate = () =>{
+//     const dispDelay = setTimeout(disp, 1000);
+//     function disp() {
+//         updateStats();
+//     }
+//     function stopdisp() {
+//         clearTimeout(disp);
+//     }
+//     stopdisp();  
+// }
 
 
 
