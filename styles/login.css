@@ -1,6 +1,9 @@
 body {
-  background: url("../assets/login_image.jpg");
+  background: url("../assets/login3.jpg");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -64,7 +67,7 @@ input {
 }
 
 #switcher {
-  background: rgba(157, 157, 157, 0.958);
+  background: rgba(157, 157, 157, 0.825);
   width: 50%;
   height: 60vh;
   position: fixed;
