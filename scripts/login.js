@@ -24,7 +24,7 @@ const responseBody = document.getElementById("response-container");
 // // SIGNUP FUNCTION
 const signup = async (name, email, pass, question, answer) => {
   console.log("clicked");
-  const url = `http://overwatch-apis.herokuapp.com/authentication/register`;
+  const url = `https://overwatch-apis.herokuapp.com/authentication/register`;
   const params = `?username=${name}&email=${email}&password=${pass}&sec_question=${question}&sec_answer=${answer}`;
   const base = `${url}${params}`;
   const req = await fetch(base, {
@@ -41,7 +41,7 @@ const signup = async (name, email, pass, question, answer) => {
 // // LOGIN FUNCTION
 const login = async (email, pass) => {
   console.log("clicked");
-  const url = `http://overwatch-apis.herokuapp.com/authentication/login`;
+  const url = `https://overwatch-apis.herokuapp.com/authentication/login`;
   const params = `?email=${email}&password=${pass}`;
   const base = `${url}${params}`;
   const req = await fetch(base, {
