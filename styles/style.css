@@ -1,159 +1,255 @@
-.pseudobody{
-    display: flex;
-    margin-top: 0;
-    color: var(--light-red);
+.pseudobody {
+  display: flex;
+  margin-top: 0;
+  color: var(--light-red);
 }
-:root{
-scroll-behavior: smooth;
-
+:root {
+  scroll-behavior: smooth;
 }
 /* MAIN BODY LEFT STYLING */
-.main-left{
-    /* border: 0.5px solid #000000; */
-    padding-top: 0;
-    margin-top: 5%;
-    width: 100%;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
+.main-left {
+  /* border: 0.5px solid #000000; */
+  padding-top: 0;
+  margin-top: 5%;
+  width: 100%;
+  animation-timing-function: ease-in-out;
 }
 
-.container{
-    /* border: 2px solid green; */
-    margin-top: 2%;
-    width: 98%;
-    margin-left: auto;
+.container {
+  /* border: 2px solid green; */
+  margin-top: 2%;
+  width: 98%;
+  margin-left: auto;
 }
 
-.heading{
-    font: 2.5rem 'Roboto';
-    font-weight: 800;
-    color: var(--light-red);
+.heading {
+  font: 2.5rem "Roboto";
+  font-weight: 800;
+  color: var(--light-red);
 }
 
-.Para{
-    font: 1.3rem 'Roboto';
-    color: var(--light-grey);
-    width: 55%;
-    margin-top: 3%;
-    font-weight: 600;
-    line-height: 1.6;
+.Para {
+  font: 1.3rem "Roboto";
+  color: var(--light-grey);
+  width: 55%;
+  margin-top: 3%;
+  font-weight: 600;
+  line-height: 1.6;
 }
-.Para b{
-    font: 1.3rem 'Roboto';
-    line-height: 1.6;
-    font-weight: 600;
+.Para2 {
+  font: 1.3rem "Roboto";
+  color: var(--light-grey);
+  width: 55%;
+  margin-top: 1%;
+  font-weight: 600;
+  line-height: 1.6;
 }
-
-#name{
-    margin-top: 200px;
-}
-#title{
-    font-size: 2.2rem;
-    color: var(--light-red);
-}
-
-#unity{
-    float: right;
-    width: 25%;
-    margin: 0 8% 0 0;
-    margin-top: -70px;
-    padding: 15px;
-    border-radius: 20%;
+.Para b {
+  font: 1.3rem "Roboto";
+  line-height: 1.6;
+  font-weight: 600;
 }
 
-.container1{
-    margin-top: 2%;
+#name {
+  margin-top: 5rem;
+  font: 1.3rem "Roboto";
+  color: var(--light-grey);
+  width: 55%;
+  font-weight: 600;
+  line-height: 1.6;
+}
+#title {
+  font-size: 2.2rem;
+  color: var(--light-red);
 }
 
-.container2{
-    margin-top: 13%;
-    display: flex;
-    flex-wrap: wrap;
+#unity {
+  float: right;
+  width: 23rem;
+  margin: 0 8% 0 0;
+  margin-top: -70px;
+  padding: 15px;
+  border-radius: 50%;
+  /* border: 2px solid white; */
 }
 
-#map{
-    height: 90vh;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 3%;
-    border: 0.15rem solid var(--light-red);
+.container1 {
+  margin-top: 2%;
 }
 
-#quote{
-    font: 3rem 'Dancing';
-    letter-spacing: 5px;
-    color: var(--light-red);
-    margin: 5% 0 0 2%;
-    -webkit-text-stroke: 0.3px var(--light-grey);
+.container2 {
+  margin-top: 13%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container3 {
+  width: 98%;
+  margin-top: 5%;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card{
-    background: rgba(228, 228, 228, 0.308);
-    animation-delay: 2000;
-    color: black;
-    border-radius: 7px;
-    width: 40%;
-    margin: 2% 0 0 2%;
-    padding: 10px;
-    padding-bottom: 10px;
+#map {
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
+  border: 0.15rem solid var(--light-red);
 }
 
-.card h4{
-    margin-top: 0%;
-    font: 2rem 'Roboto';
-    font-weight: 600;
-    color: black;
+#quote {
+  font: 3rem "Dancing";
+  letter-spacing: 0.25rem;
+  color: var(--light-red);
+  margin: 5% 0 0 2%;
+  -webkit-text-stroke: 0.3px var(--light-grey);
+}
+#quote2 {
+  font: 4rem "Dancing";
+  letter-spacing: 0.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--light-red);
+  -webkit-text-stroke: 0.3px var(--light-grey);
 }
 
-.sub-card{
-    display: flex;
-    align-items: center;
-    margin-left: 0.3%;
-    margin-top: 0.3%;
+.card {
+  background: rgba(228, 228, 228, 0.308);
+  color: black;
+  border-radius: 0.25rem;
+  width: 30rem;
+  margin-top: 2%;
+  padding: 1rem;
 }
 
-.mini-icon-1{
-    margin-top: -4%;
-    height: 20px;
-    float: right;
+.card h4 {
+  margin-top: 0%;
+  font: 2rem "Roboto";
+  font-weight: 600;
+  color: black;
 }
 
-.mini-icon{
-    height: 12px;
+.sub-card {
+  display: flex;
+  align-items: center;
+  margin-left: 0.3%;
+  margin-top: 0.3%;
 }
 
-.sub-card span{
-    font: 12px 'Patrick';
+.mini-icon-1 {
+  margin-top: -4%;
+  height: 20px;
+  float: right;
+}
+
+.mini-icon {
+  height: 12px;
+}
+
+.sub-card span {
+  font: 0.9rem "Patrick";
 }
 
 .main-card {
-    margin: 1% 0 0 1.1%;
-    border-top: 1px solid rgba(0, 0, 0, 0.366);
+  margin: 1% 0 0 1.1%;
+  border-top: 1px solid rgba(0, 0, 0, 0.366);
 }
 
-.main-card p{
-    font: 1.5rem 'Roboto';
-    width: 95%;
-    margin-top: 2%;
-    letter-spacing: 1px;
+.main-card p {
+  font: 1.5rem "Roboto";
+  width: 95%;
+  margin-top: 2%;
+  letter-spacing: 1px;
 }
 
-.main-card span{
-    float: right;
-    font: 1rem 'Roboto';
-    font-weight: 900;
+.main-card span {
+  float: right;
+  font: 0.9rem "Roboto";
+  font-weight: 900;
 }
 
-
-.down{
-    width: 2%;
-    margin: 6% 0 0 45%;
-    animation-iteration-count: infinite;
+.down {
+  width: 1.5rem;
+  margin: 6% 0 0 45%;
+  animation-iteration-count: infinite;
 }
 
-#story-container{
-    display: flex;
-    flex-wrap: wrap;
-    /* border: 2px solid white; */
-    margin-bottom: 5%;
+#story-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* border: 2px solid white; */
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 720px) {
+  #quote {
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    margin-top: 20%;
+  }
+  .container {
+    margin-top: 15%;
+  }
+  .container3 {
+    margin-top: 15%;
+  }
+  .Para {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .Para2 {
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 10%;
+  }
+  #unity {
+    width: 10rem;
+    margin: 10% 0 0 0;
+  }
+  #name {
+    font-size: 1rem;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  .down {
+    margin-top: 45%;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  #map {
+    width: 99%;
+  }
+  #story-container {
+    justify-content: center;
+  }
+  .card {
+    width: 20rem;
+    margin-top: 7%;
+    margin-left: -10px;
+    padding: 0.5rem;
+  }
+  .card h4 {
+    font-size: 1.25rem;
+  }
+  .main-card p {
+    font-size: 1.15rem;
+  }
+  .sub-card span {
+    font-size: 0.5rem;
+  }
+  .mini-icon {
+    height: 7px;
+  }
+  .main-card span {
+    font-size: 0.5rem;
+  }
+  #quote2 {
+    font-size: 2rem;
+    margin-top: 5%;
+}
 }

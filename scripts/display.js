@@ -2,12 +2,13 @@ const sidebar = document.getElementById('sidebar');
 const sideContainer = document.getElementById('sidebar-container');
 const statContainer = document.getElementById('stats-container');
 const username = sessionStorage.getItem('uname');
-var flag= 0;
+// const loader = document.getElementById("loader-container");
+var flag = 0;
 
 const expand = () => {
-    if(flag==0){
-        flag=1;
-        sidebar.style.width = '15%';
+    if (flag == 0) {
+        flag = 1;
+        sidebar.style.width = '13rem';
         sidebar.classList.add("animate__slideInLeft");
         const myTimeout = setTimeout(remove1, 3000);
 
@@ -15,26 +16,27 @@ const expand = () => {
             sidebar.classList.remove("animate__slideInLeft");
         }
     }
-    else if(flag==1){
-        sidebar.style.width = '2.1%';
-        flag=0;
+    else if (flag == 1) {
+        sidebar.style.width = '1.8rem';
+        flag = 0;
+        sidebar.style.transition = '0.5s';
     }
 }
 
-$('#menu-icon').click(function(){
+$('#menu-icon').click(function () {
     $('#sidebar-container').toggle();
     expand()
 })
 
 
-$('#sidebar button').click(function(){
+$('#sidebar button').click(function () {
     console.log("click");
     window.location.href = "./login.html";
 })
 
-const usercheck = () =>{
+const usercheck = () => {
     const profile = document.getElementById('profile')
-    if(username != null){
+    if (username != null) {
         profile.innerHTML = `<img src="../assets/icons/about.png" class="siderbar-icon"><h3 onclick="openProfile()">${username}</h3>
         <br><p id="logout" onclick="logout()">Logout</p>
         `;
@@ -46,11 +48,18 @@ const usercheck = () =>{
 }
 usercheck();
 
-const openProfile = () =>{
+const openProfile = () => {
     window.location.href = "../profile.html";
 }
 
-const logout = () =>{
+const logout = () => {
     sessionStorage.clear();
     window.location.href = "../index.html"
 }
+
+
+const removeLoader = () => {
+    // loader.style.display = "none";
+    $('#loader-container').fadeOut();
+}
+const myTimeout2 = setTimeout(removeLoader, 2000);

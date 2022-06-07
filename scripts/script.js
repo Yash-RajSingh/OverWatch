@@ -17,12 +17,12 @@ const displayStory = async () => {
         method: 'GET'
     })
     const response = await request.json();
-    // console.log(response);
+    console.log(response);
     const data = response.data;
     storyContainer.innerHTML = ``;
     for(let x=0; x<4; x++){
         var identity = identityCheck(data[x].anonymity, data[x].username)
-        storyContainer.innerHTML += `<div class="card animate__animated animate__backInDown" id='${data[x].suid}'>
+        storyContainer.innerHTML += `<div class="card" id='${data[x].suid}'>
         <h4>${identity}</h4>
             <div class="sub-card">
             <img src="../assets/icons/at.png" class="mini-icon">&nbsp;<span>${data[x].location}</span>
