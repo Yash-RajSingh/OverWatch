@@ -31,10 +31,7 @@
   font-family: "Patrick";
   src: url(fonts/PatrickHand-Regular.ttf);
 }
-@font-face {
-  font-family: "Basca";
-  src: url(fonts/athabasca-ex-el.ttf);
-}
+
 @font-face {
   font-family: "Roboto";
   src: url(fonts/RobotoSlab-ExtraLight.ttf);
@@ -43,6 +40,8 @@
 /* BODY STYLYING */
 body {
   background: var(--black);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* HEADER STYLING */
