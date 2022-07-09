@@ -37,8 +37,9 @@ $('#sidebar button').click(function () {
 const usercheck = () => {
     const profile = document.getElementById('profile')
     if (username != null) {
-        profile.innerHTML = `<img src="../assets/icons/about.png" class="siderbar-icon"><h3 onclick="openProfile()">${username}</h3>
-        <br><p id="logout" onclick="logout()">Logout</p>
+        profile.innerHTML = `<img src="../assets/icons/about.png" class="profile-icon"><h3 onclick="openProfile()">${username}</h3>
+        <br>
+        <p id="logout" onclick="logout()">Logout</p>
         `;
     }
     else {
