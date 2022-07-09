@@ -86,7 +86,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  margin: 2.5rem 1rem;
+  margin: 2rem 1rem;
 }
 
 #sidebar a {
@@ -102,13 +102,17 @@ body {
 .siderbar-icon {
   width: 2rem;
 }
+
+.profile-icon{
+  width: 2rem;
+  height: 2rem;
+  margin-left:  10%;
+}
 #profile {
-  /* border: 2px solid black; */
   width: 100%;
+  margin-top: 35%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15% 0 0 0%;
+  flex-wrap: wrap;
 }
 #profile button {
   background: var(--dark-red);
@@ -117,17 +121,13 @@ body {
   font-size: 1.25rem;
   border: 0.13rem solid black;
   border-radius: 0.5rem;
-  margin: 0 25%;
-  margin-top: 10%;
-}
-#profile img {
-  margin-left: 5%;
+  margin: 0 auto;
 }
 #profile h3 {
   text-align: center;
   font: 1.3rem "Roboto";
   font-weight: 600;
-  padding: 10px;
+  padding: 0 10px;
   cursor: pointer;
 }
 
@@ -156,11 +156,11 @@ body {
 #logout {
   background: var(--dark-red);
   color: var(--light-grey);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   font-size: 1.25rem;
   border: 0.13rem solid black;
   border-radius: 0.5rem;
-  margin: 100px 0 0 -40%;
+  margin: 10% auto;
 }
 
 
@@ -229,5 +229,8 @@ body {
   }
   .pseudobody {
     width: 92%;
+  }
+  #profile{
+    margin-top: 50%;
   }
 }

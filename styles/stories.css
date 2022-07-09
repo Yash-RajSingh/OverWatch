@@ -132,11 +132,11 @@ input:focus {
 }
 .mini-icon-1 {
   margin-top: -4%;
-  height: 20px;
+  height: 1.25rem;
   float: right;
 }
 .mini-icon {
-  height: 12px;
+  height: 0.75rem;
 }
 
 .sub-card span {
@@ -196,6 +196,15 @@ input:focus {
 }
 .main-left hr {
   margin-top: 1%;
+}
+
+#quote2 {
+  font: 3rem "Dancing";
+  letter-spacing: 0.25rem;
+  margin: 5% 0 2rem 0;
+  text-align: center;
+  color: var(--light-red);
+  -webkit-text-stroke: 0.3px var(--light-grey);
 }
 
 @media screen and (max-width: 720px) {
@@ -270,5 +279,9 @@ input:focus {
     width: 90%;
     margin: 7% auto 2% auto;
     border: 0;
+  }
+  #quote2 {
+    font-size: 1.5rem;
+    margin-top: 7%;
   }
 }
