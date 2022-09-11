@@ -1,0 +1,178 @@
+body {
+  background: url("../assets/login3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header {
+  position: static;
+}
+*{
+  animation-delay: 0!important;
+}
+#card-container {
+  margin: 3% 0 0 10%;
+  display: flex;
+  gap: 1%;
+  /* border: 2px solid green; */
+}
+.btn {
+  letter-spacing: 1px;
+  margin: 10% 0 5% 30%;
+  font: 1rem "Roboto";
+  background: black;
+  border: 0;
+  color: white;
+  padding: 0.25rem 1rem;
+}
+.card {
+  background: rgba(255, 255, 255, 0.967);
+  font-family: "Roboto";
+  z-index: 2;
+  width: 20rem;
+  font-weight: 600;
+  height: max-content;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+.title {
+  text-align: center;
+  color: var(--dark-red);
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+#login,
+#signup {
+  margin-top: 5%;
+}
+
+input {
+  width: 100%;
+  padding: 0.4rem;
+  border: 0.01rem solid rgb(48, 48, 48);
+  margin: 2.5% 0;
+  font: 1rem;
+}
+
+.login-card {
+  margin-top: 6%;
+}
+.signup-card {
+  display: none;
+  animation-delay: 0;
+}
+
+#switcher {
+  background: rgba(157, 157, 157, 0.825);
+  /* border: 1rem solid rgb(26, 174, 0); */
+  width: 42rem;
+  height: 60vh;
+  position: fixed;
+  margin: 6% 0 0 7%;
+  top: 10%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.left,
+.right {
+  width: 50%;
+  font: 2rem "Roboto";
+  text-align: center;
+  height: max-content;
+}
+.login-card{
+  margin-left: 23%;
+}
+
+
+.right{
+  margin-left: 51%;
+  display: none;
+
+}
+
+.btn2 {
+  z-index: 5;
+  letter-spacing: 1px;
+  pointer-events:all;
+  margin-top: 10%;
+  font: 1rem "Roboto";
+  border: 0;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+
+#response-container{
+  background: rgba(128, 128, 128, 0.732);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0; 
+  z-index: 10002;
+}
+#response{
+  padding: 3.5rem 4.5rem;
+  font: 2rem 'Roboto';
+    background: white;
+    width: 27rem;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+.msgdiv{
+  display: flex;
+  gap: 2%;
+}
+#correct{
+  width: 3rem;
+}
+
+
+@media screen and (max-width: 720px) {
+  #card-container {
+    margin-left: 0%;
+  }
+  #switcher {
+    width: 21rem;
+    height: 85vh;
+    margin-top: 0;
+    margin-left: 2.5%;
+  }
+  .card {
+    width: 18rem;
+  }
+  .left{
+    margin: 90% 0 0 25%;
+  }
+  .right{
+    margin: 140% 0 0 25%;
+  }
+  .login-card{
+    margin: 35% 0 0 9%;
+  }
+
+  .signup-card{
+    margin: 10% 0 0 9%;
+    position: absolute;
+  }
+  #response{
+    width: 20rem;
+    left: 9%;
+    padding: 4rem 2rem;
+  }
+}

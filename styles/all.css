@@ -1,0 +1,236 @@
+:root {
+  --dark-red: #731010;
+  --light-red: #a80000;
+  --black: #1c1c1c;
+  --light-grey: #d4d4d4;
+  --dark-grey: #707070;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  animation-delay: 2300ms;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "ops";
+  src: url(fonts/BlackOpsOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Dancing";
+  src: url(fonts/DancingScript-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Patrick";
+  src: url(fonts/PatrickHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/RobotoSlab-ExtraLight.ttf);
+}
+
+/* BODY STYLYING */
+body {
+  background: var(--black);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* HEADER STYLING */
+.header {
+  width: 100%;
+  margin-left: auto;
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  background: rgba(53, 53, 53, 0.337);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: var(--light-grey);
+  -webkit-text-stroke: 0.025rem var(--light-red);
+  font-family: "ops";
+  letter-spacing: 0.25rem;
+}
+
+/* SIDEBAR STYLING */
+#sidebar {
+  background: var(--light-red);
+  position: fixed;
+  height: 100vh;
+  width: 1.8rem;
+  z-index: 10000;
+  animation-delay: 0s;
+}
+#menu-icon {
+  width: 1.2rem;
+  margin: 0.3rem;
+  float: right;
+}
+#sidebar ul {
+  margin-top: 50%;
+}
+#sidebar-container {
+  display: none;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 2rem 1rem;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar-item h4 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+
+.siderbar-icon {
+  width: 2rem;
+}
+
+.profile-icon{
+  width: 2rem;
+  height: 2rem;
+  margin-left:  10%;
+}
+#profile {
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#profile button {
+  background: var(--dark-red);
+  color: var(--light-grey);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  border: 0.13rem solid black;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+#profile h3 {
+  text-align: center;
+  font: 1.3rem "Roboto";
+  font-weight: 600;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/*---------Custom Scrollbar Styling---------*/
+::-webkit-scrollbar {
+  width: 0.25rem;
+  background: var(--dark-grey);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-red);
+  border: 0.5px solid var(--dark-red);
+  background-clip: padding-box;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ee0c0cd5;
+}
+
+.pseudobody {
+  /* border: 2px solid rgb(255, 0, 170); */
+  width: 97%;
+  margin: 1% 0 0 auto;
+}
+
+#logout {
+  background: var(--dark-red);
+  color: var(--light-grey);
+  padding: 0.5rem 1.25rem;
+  font-size: 1.25rem;
+  border: 0.13rem solid black;
+  border-radius: 0.5rem;
+  margin: 10% auto;
+}
+
+
+/* PRELOADER STYLING  */
+.loader-container{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100000;
+  background: var(--black);
+}
+.loader {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--light-red);
+  letter-spacing: 0.2em;
+}
+  .loader::before, .loader::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: var(--light-red);
+    position: absolute;
+    animation: load .7s infinite alternate ease-in-out;
+  }
+  
+  .loader::before {
+    top: 0;
+  }
+  
+  .loader::after {
+    bottom: 0;
+  }
+
+
+@keyframes load {
+  0% { left: 0; height: 30px; width: 15px }
+  50% { height: 8px; width: 40px }
+  100% { left: 235px; height: 30px; width: 15px}
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+  .header h1 {
+    font-size: 2rem;
+  -webkit-text-stroke: 0.05rem var(--light-red);
+}
+  #sidebar ul {
+    margin-top: 5rem;
+  }
+  .pseudobody {
+    width: 92%;
+  }
+  #profile{
+    margin-top: 50%;
+  }
+}

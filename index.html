@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>OverWatch</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.png" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- LINK  -->
+    <!-- LEAFLET STYLING  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+    />
+
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- STYLESHEETS LINK  -->
+    <link rel="stylesheet" href="styles/all.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="loader-container" id="loader-container">
+      <div class="loader">Loading...</div>
+    </div>
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="animate__animated">
+      <img src="assets/icons/ham.png" id="menu-icon" />
+      <div id="sidebar-container">
+        <ul>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/home.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4>Home</h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/info.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="info.html#info"> Instructions</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/danger.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="index.html#map"> Unsafe Zones</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/posts.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="stories.html"> Stories</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/about.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="info.html#about"> About</a></h4>
+            </div>
+          </li>
+        </ul>
+        <div id="profile">
+          <button>Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1 class="animate__animated animate__bounceInDown">Overwatch</h1>
+    </div>
+
+    <!-- PSEUDOBODY -->
+    <div class="pseudobody">
+      <!-- MAIN BODY  -->
+      <div class="animate__animated animate__slideInLeft main-left">
+        <h3 id="quote" class="animate__animated animate__bounceInDown">Unite for each other's safety</h3>
+        <div class="container container1">
+          <img src="assets/we5.png" alt="Women together" class="" id="unity">
+          <p class="Para"> 
+            <b>W</b>ith the vision of increasing security not only for women, but for
+            also for all the citizens of the society who are subjected to malpractices and
+            harassments outside of their homes. <br></p> <b id="name">We bring you <span id="title">OVERWATCH!</span></b>
+            <p class="Para2">Your digital guardian angel to look over you and your loved ones.
+          </p>
+
+          <img src="assets/icons/down.png"  class="down animate__animated animate__bounce" id="down">
+
+        </div>
+
+        <div class="container container2" id="map-box">
+          <h3 class="heading">Look out for these Unsafe Zones</h3>
+          <div id="map">
+
+          </div>
+        </div>
+
+        <div class="container3" id="stories">
+          <h3 class="heading">Stories</h3>
+          <div id="story-container">
+
+          </div>
+        </div>
+        <p id="quote2">Stay Safe!</p>
+      </div>
+
+
+
+    <!-- SCRIPTS -->
+
+    <!-- LEAFLET SCRIPTS  -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <!-- OTHER SCRIPT FILES  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/display.js" async defer></script>
+    <script src="scripts/script.js" async defer></script>
+  </body>
+</html>

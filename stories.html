@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OverWatch | Stories</title>
+        <link rel="icon" type="image" href="assets/logo.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/all.css">
+        <link rel="stylesheet" href="styles/stories.css">
+    </head>
+    <body>
+      <div class="loader-container" id="loader-container">
+        <div class="loader">Loading...</div>
+      </div>
+        <!-- SIDEBAR  -->
+    <div id="sidebar">
+      <img src="assets/icons/ham.png" id="menu-icon" />
+      <div id="sidebar-container">
+        <ul>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/home.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="index.html">Home</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/info.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="info.html#info"> Instructions</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/danger.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="index.html#map"> Unsafe Zones</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/posts.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="stories.html"> Stories</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/about.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="info.html#about"> About</a></h4>
+            </div>
+          </li>
+        </ul>
+        <div id="profile">
+          <button>Login</button>
+        </div>
+      </div>
+    </div>
+  
+      <!-- HEADER -->
+  
+      <div class="header">
+        <!-- <img src="assets/logot (2).png" alt="Logo" class="logo" /> -->
+        <h1>User Stories </h1>
+      </div>
+  
+      <!-- PSEUDOBODY -->
+      <div class="pseudobody">
+
+          <div class="main-left">
+            <h4>Share your experience</h4>
+            <hr></hr>
+            <div>
+                <form id="story">
+                    <textarea type="text" id="experience" placeholder="Share Something..."></textarea>
+                    <br>
+                    <div class="substory">
+                        <div class="substory-1">
+                            <span>Date of incident :</span>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="substory-1">
+                            <span>Locaion of incident :</span>
+                            <input type="text" id="location" placeholder="Location" autocomplete="off">
+                        </div>
+                        <div class="substory-1">
+                            <span>Post anonymously?</span><br>
+                            &nbsp;
+                            <input type="checkbox" id="choice" >
+                            <label for="choice">Yes</label>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="story-display">
+                <h4>Stories</h4>
+                <div id="story-container">
+
+                </div>
+            </div>
+        <p id="quote2">That's it for now. Stay Safe!</p>
+          </div>
+
+          <div class="main-right">
+            <h4>Overwatch Stats</h4>
+            <hr>
+            <div id="stats-container">
+                
+            </div>
+          </div>
+      </div>
+  
+  
+      <!-- SCRIPTS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="scripts/display.js" async defer></script>
+      <script src="scripts/stories.js" async defer></script>
+    </body>
+</html>

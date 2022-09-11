@@ -1,0 +1,152 @@
+.pseudobody{
+    /* list-style: flex; */
+    display: flex;
+    color: var(--dark-grey);
+    width: 96%;
+    margin: 1% 0 0 auto;
+}
+
+.header{
+    position: static;
+}
+.main-left{
+    width: 90%;
+}
+
+.about h5{
+    font: 3rem 'Patrick';
+    color: var(--light-grey);
+    font-weight: 500;
+    width: 70%;
+    margin: 4% 0 0 0;
+}
+.heading{
+    font: 2rem 'Roboto';
+    font-weight: 800;
+    color: var(--light-red);
+    
+}
+.about img {
+    float: right;
+    width: 30%;
+    margin: 0 1rem;
+}
+
+.container{
+    margin-top: 5%;
+}
+.container p{
+    font: 1.25rem 'Roboto';
+    font-weight: 550;
+    color: var(--light-grey);
+    width: 95%;
+    margin: 1%;
+}
+
+.container ul{
+    width: 90%;
+    margin: auto;
+}
+.container li{
+    font: 1.25rem 'Roboto';
+    font-weight: 550;
+    color: var(--light-grey);
+}
+
+.footer img{
+    float: right;
+    width: 10%;
+    margin: 1rem;
+}
+
+.footer h2{
+    font: 2.5rem 'ops';
+    color: var(--light-grey);
+    width: 70%;
+    margin: auto 2%;
+
+}
+#quote2 {
+    font: 3rem "Dancing";
+    letter-spacing: 0.25rem;
+    margin: 5% 0 2rem 0;
+    text-align: center;
+    color: var(--light-red);
+    -webkit-text-stroke: 0.3px var(--light-grey);
+  }
+
+
+.main-right{
+    border-left: 0.5px solid rgb(114, 114, 114);
+    font: 1.5rem 'Roboto';
+}
+
+.main-right h4{
+    color: var(--light-red);
+    text-align: center;
+    font-size: 1.35rem;
+    margin-bottom: 2% ;
+}
+
+#stats-container{
+    padding: 5px;
+}
+#stats-container p{
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--light-red);
+}
+#stats-container b{
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+@media screen and (max-width: 720px){
+    .pseudobody{
+        flex-direction: column-reverse;
+    }
+    .main-left{
+        /* border: 1px solid white; */
+        width: 93%;
+        margin-left: auto;
+    }
+    .main-right{
+        display: none;
+    }
+    .about h5{
+        font-size: 1.5rem;
+        width: 95%;
+    }
+    .about img{
+        float: none;
+        margin-top: 3%;
+        width: 80%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .container p{
+        font-size: 1rem;
+        margin-top: 2%;
+    }
+    .container li{
+        font-size: 0.85rem;
+        margin-top: 2%;
+    }
+
+    .footer{
+        margin-top: 10%;
+    }
+    .footer img{
+        width: 20%;
+    }
+    .footer h2{
+        font-size: 1.25rem;
+    }
+    #quote2{
+        font-size: 2rem;
+        margin-top: 7%;
+    }
+}

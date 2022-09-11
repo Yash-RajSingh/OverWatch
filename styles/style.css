@@ -1,0 +1,259 @@
+.pseudobody {
+  display: flex;
+  margin-top: 0;
+  color: var(--light-red);
+}
+:root {
+  scroll-behavior: smooth;
+}
+/* MAIN BODY LEFT STYLING */
+.main-left {
+  /* border: 0.5px solid #000000; */
+  padding-top: 0;
+  margin-top: 5%;
+  width: 100%;
+  animation-timing-function: ease-in-out;
+}
+
+.container {
+  /* border: 2px solid green; */
+  margin-top: 2%;
+  width: 98%;
+  margin-left: auto;
+}
+
+.heading {
+  font: 2rem "Roboto";
+  font-weight: 800;
+  color: var(--light-red);
+}
+
+.Para {
+  font: 1.25rem "Roboto";
+  color: var(--light-grey);
+  width: 55%;
+  margin-top: 3%;
+  font-weight: 550;
+  line-height: 1.6;
+}
+.Para2 {
+  font: 1.25rem "Roboto";
+  color: var(--light-grey);
+  font-weight: 550;
+  width: 55%;
+  margin-top: 1%;
+  font-weight: 550;
+  line-height: 1.6;
+}
+.Para b {
+  font: 1.3rem "Roboto";
+  line-height: 1.6;
+  font-weight: 550;
+}
+
+#name {
+  margin-top: 5rem;
+  font: 1.25rem "Roboto";
+  color: var(--light-grey);
+  width: 55%;
+  font-weight: 550;
+  line-height: 1.6;
+}
+#title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--light-red);
+}
+
+#unity {
+  float: right;
+  width: 23rem;
+  margin: 0 8% 0 0;
+  margin-top: -70px;
+  padding: 15px;
+  border-radius: 50%;
+  /* border: 2px solid white; */
+}
+
+.container1 {
+  margin-top: 2%;
+}
+
+.container2 {
+  margin-top: 13%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container3 {
+  width: 98%;
+  margin-top: 5%;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#map {
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
+  border: 0.15rem solid var(--light-red);
+}
+
+#quote {
+  font: 3rem "Dancing";
+  letter-spacing: 0.25rem;
+  color: var(--light-red);
+  margin: 7% 0 0 2%;
+  -webkit-text-stroke: 0.3px var(--light-grey);
+}
+#quote2 {
+  font: 4rem "Dancing";
+  letter-spacing: 0.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--light-red);
+  -webkit-text-stroke: 0.3px var(--light-grey);
+}
+
+.card {
+  background: rgba(228, 228, 228, 0.308);
+  color: black;
+  border-radius: 0.25rem;
+  width: 30rem;
+  margin: 2%;
+  padding: 1rem;
+}
+
+.card h4 {
+  margin-top: 0%;
+  font: 1.35rem "Roboto";
+  font-weight: 600;
+  color: black;
+}
+
+.sub-card {
+  display: flex;
+  align-items: center;
+  margin-left: 0.3%;
+  margin-top: 0.3%;
+}
+
+.mini-icon-1 {
+  margin-top: -4%;
+  height: 20px;
+  float: right;
+}
+
+.mini-icon {
+  height: 12px;
+}
+
+.sub-card span {
+  font: 0.9rem "Patrick";
+}
+
+.main-card {
+  margin: 1% 0 0 1.1%;
+  border-top: 1px solid rgba(0, 0, 0, 0.366);
+}
+
+.main-card p {
+  font: 1.1rem "Roboto";
+  color: black;
+  font-weight: 590;
+  width: 95%;
+  margin: 2% auto;
+  letter-spacing: 1px;
+}
+
+.main-card span {
+  float: right;
+  font: 0.9rem "Roboto";
+  font-weight: 900;
+}
+
+.down {
+  width: 1.5rem;
+  margin: 6% 0 0 45%;
+  animation-iteration-count: infinite;
+}
+
+#story-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 2px solid white; */
+  margin: 0 0 5% 0;
+}
+
+@media screen and (max-width: 720px) {
+  #quote {
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    margin-top: 20%;
+  }
+  .container {
+    margin-top: 15%;
+  }
+  .container3 {
+    margin-top: 15%;
+  }
+  .Para {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .Para2 {
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 10%;
+  }
+  #unity {
+    width: 10rem;
+    margin: 10% 0 0 0;
+  }
+  #name {
+    font-size: 1rem;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  .down {
+    margin-top: 45%;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  #map {
+    width: 99%;
+  }
+  #story-container {
+    justify-content: center;
+  }
+  .card {
+    width: 20rem;
+    margin-top: 7%;
+    margin-left: -10px;
+    padding: 0.5rem;
+  }
+  .card h4 {
+    font-size: 1.25rem;
+  }
+  .main-card p {
+    font-size: 1.15rem;
+  }
+  .sub-card span {
+    font-size: 0.5rem;
+  }
+  .mini-icon {
+    height: 7px;
+  }
+  .main-card span {
+    font-size: 0.5rem;
+  }
+  #quote2 {
+    font-size: 2rem;
+    margin-top: 5%;
+}
+}

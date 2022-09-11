@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>OverWatch | Login</title>
+  <link rel="shortcut icon" type="image/jpg" href="assets/logo.png" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- STYLESHEETS LINK  -->
+  <link rel="stylesheet" href="styles/all.css" />
+  <link rel="stylesheet" href="styles/login.css" />
+</head>
+
+<body>
+  <div class="loader-container" id="loader-container">
+    <div class="loader">Loading...</div>
+  </div>
+  <!-- SIDEBAR -->
+
+  <div id="sidebar" class="animate__animated">
+    <img src="assets/icons/ham.png" id="menu-icon" />
+    <div id="sidebar-container">
+      <ul>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/home.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="index.html">Home</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/info.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="info.html#info"> Instructions</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/danger.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="index.html#map"> Unsafe Zones</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/posts.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="stories.html"> Stories</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/about.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="info.html#about"> About</a></h4>
+          </div>
+        </li>
+      </ul>
+      <div id="profile">
+        <button>Login</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1 class="animate__animated animate__bounceInDown">Overwatch</h1>
+  </div>
+
+  <!-- PSEUDOBODY -->
+  <div class="pseudobody">
+    <!-- CARD CONTAINER  -->
+    <div id="card-container">
+
+      <!-- sIGNUP CARD  -->
+      <div class="signup-card card animate__animated animate__backInRight" style="animation-delay: 0;" id="signup-card">
+        <h4 class="title">Sign Up</h4>
+        <hr>
+        <form id="signup">
+          <label for="sname">Enter Username</label>
+          <input type="text" id="sname" autocomplete="off" placeholder="Username" required />
+          <label for="semail">Enter Email</label>
+          <input type="text" id="semail" autocomplete="off" placeholder="Email Address" required />
+          <label for="spass">Enter Password</label>
+          <input type="password" id="spass" autocomplete="off" placeholder="Password" required />
+          <label for="secquestion">Enter Security Question</label>
+          <input type="text" id="secquestion" autocomplete="off" placeholder="Security Question" required />
+          <label for="secanswer">Enter Security Answer</label>
+          <input type="text" id="secanswer" autocomplete="off" placeholder="Security Answer" required />
+          <button type="submit" class="btn" >SignUp</button>
+        </form>
+      </div>
+
+
+      <!-- LOGIN CARD  -->
+      <div class="login-card card animate__animated animate__backInLeft" style="animation-delay: 0;" id="login-card">
+        <h4 class="title">Log In</h4>
+        <form id="login">
+          <label for="lemail">Enter Email</label>
+          <input type="text" id="lemail" autocomplete="off" placeholder="Email Address" required />
+          <label for="lpass">Enter Password</label>
+          <input type="password" id="lpass" autocomplete="off" placeholder="Email Address" required />
+          <button type="submit" class="btn">LogIn</button>
+        </form>
+      </div>
+
+      
+    </div>
+    <div id="switcher">
+      <div class="left" >
+        Don't have an account?<br>
+        <button class="btn2" id="slideleft" >SignUp</button>
+      </div>
+      <div class="right">
+        Already have an account?<br>
+        <button class="btn2" id="slideright">LogIn</button>
+      </div>
+    </div>
+
+    <div id="response-container">
+      <div id="response">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/display.js"></script>
+  <script src="scripts/login.js"></script>
+</body>
+
+</html>

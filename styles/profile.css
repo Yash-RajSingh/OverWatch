@@ -1,0 +1,201 @@
+.header {
+  position: static;
+}
+.pseudobody {
+  width: 96%;
+  padding-right: 1rem;
+}
+.heading {
+  font: 2rem "Roboto";
+  font-weight: 800;
+  color: var(--light-red);
+}
+
+.container {
+  margin-top: 3%;
+}
+.first {
+  float: right;
+  margin-top: 0;
+  margin-left: 0;
+}
+.profile-card {
+  width: 30rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+.profile-card h3 {
+  font: 1.25rem "Roboto";
+  font-weight: 700;
+  color: var(--light-red);
+}
+
+.profile-card p {
+  font: 1.25rem "Roboto";
+  letter-spacing: 2px;
+  margin: 2%;
+  font-weight: 600;
+  color: var(--light-grey);
+}
+
+#story {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.mini-icon-1 {
+  margin-top: -4%;
+  height: 1.25rem;
+  float: right;
+}
+.mini-icon {
+  height: 0.75rem;
+}
+
+.card {
+  background: rgba(228, 228, 228, 0.308);
+  animation-delay: 2000;
+  color: black;
+  border-radius: 7px;
+  width: 40%;
+  margin: 2% 0 0 0%;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+.card h4 {
+  margin-top: 0%;
+  font: 1.35rem "Roboto";
+  font-weight: 600;
+  color: black;
+}
+
+.sub-card {
+  display: flex;
+  align-items: center;
+  margin-left: 0.3%;
+  margin-top: 0.3%;
+}
+.mini-icon-1 {
+  margin-top: -4%;
+  height: 1.25rem;
+  float: right;
+}
+.mini-icon {
+  height: 0.75rem;
+}
+
+.sub-card span {
+  font: 0.75rem "Patrick";
+}
+
+.main-card {
+  border-top: 1px solid rgba(0, 0, 0, 0.366);
+  margin: 1% 0 0 1.1%;
+}
+.main-card p {
+  font: 1.1rem "Roboto";
+  width: 95%;
+  font-weight: 590;
+  margin: 2% auto 0 auto;
+  letter-spacing: 1px;
+}
+.main-card span {
+  float: right;
+  font: 0.75rem "Roboto";
+  font-weight: 900;
+}
+
+/* ZONES STYLING  */
+
+#zones {
+  /* background: #8080804c; */
+  width: 40%;
+  padding: 10px;
+}
+
+.zone-loc {
+  color: var(--light-grey);
+  margin-top: 2%;
+  padding: 0 10px;
+  font: 1.25rem "Roboto";
+}
+
+.mini-icon-2 {
+  margin-top: 2%;
+  padding-left: 25px;
+  height: 0.75rem;
+  float: right;
+}
+
+#quote2 {
+    font: 3rem "Dancing";
+    letter-spacing: 0.25rem;
+    margin: 5% 0 2rem 0;
+    text-align: center;
+    color: var(--light-red);
+    -webkit-text-stroke: 0.3px var(--light-grey);
+  }
+
+@media screen and (max-width: 720px) {
+  .pseudobody {
+    width: 90%;
+    margin-left: auto;
+  }
+
+  .first {
+    float: none;
+    margin-top: 3%;
+  }
+  .profile-card {
+    width: 17rem;
+    margin-left: 2%;
+  }
+  .profile-card h3 {
+    font-size: 1rem;
+  }
+  .profile-card p {
+    font-size: 0.8rem;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+  }
+  .card {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .card h4 {
+    font-size: 1.2rem;
+  }
+  .main-card p {
+    font-size: 0.8rem;
+    font-weight: 550;
+    letter-spacing: 0;
+  }
+  .main-card span {
+    font-size: 0.75rem;
+    margin-top: 2%;
+  }
+  .main-card br {
+    display: none;
+  }
+
+.mini-icon-1{
+    height: 0.8rem;
+    margin-top: 0;
+}
+  #zones {
+    width: 95%;
+    padding-left: 0.5rem;
+  }
+  .zone-loc {
+    font-size: 0.8rem;
+    padding-left: 0;
+  }
+  #quote2{
+    font-size: 1.5rem;
+    margin-top: 7%;
+}
+}

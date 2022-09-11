@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>OverWatch | ABOUT</title>
+  <link rel="shortcut icon" type="image" href="assets/logo.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/all.css">
+  <link rel="stylesheet" href="styles/info.css" />
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <div class="loader-container" id="loader-container">
+    <div class="loader">Loading...</div>
+  </div>
+  <!-- SIDEBAR  -->
+  <div id="sidebar">
+    <img src="assets/icons/ham.png" id="menu-icon" />
+    <div id="sidebar-container">
+      <ul>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/home.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="index.html">Home</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/info.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="info.html#info"> Instructions</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/danger.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="index.html#map"> Unsafe Zones</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/posts.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="stories.html"> Stories</a></h4>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-item">
+            <img src="assets/icons/about.png" alt="icon" class="siderbar-icon" />
+            <h4><a href="info.html#about"> About</a></h4>
+          </div>
+        </li>
+      </ul>
+      <div id="profile">
+        <button>Login</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER  -->
+  <div class="header ">
+    <h1 class="animate__animated animate__bounceInDown">Overwatch</h1>
+  </div>
+  <!-- PSEUDOBODY -->
+  <div class="pseudobody">
+    <div class="main-left animate__animated animate__slideInLeft">
+      <!-- About -->
+      <div class="about">
+        <img src="assets/we6.png" alt="image">
+        <h5> We at OverWatch have a vision of making this world a better and safer place for each and every member
+          of the society.
+        </h5>
+        <div class="container" >
+          <h3 class="heading">About</h3>
+          <p> On OverWatch, you can have a look at the unsafe zones in your city on a map based
+            on the
+            experience of citizens around you, you can report any location as unsafe based on
+            your
+            experience , people who have witnessed any crime can share their experience
+            with others so that others can learn from their experience and be aware and stay
+            safe by
+            avoiding these unsafe zones. You can read about the experience that led to people to
+            report
+            a location as a unsafe zone &
+            post your own experience about any location in your city.
+          <br><br>
+            We believe if Overwatch is successful and people start sharing their experiences,
+            mishappenings because of crimes can be averted from ever happening.
+            If Overwatch recieves active participation, the goverment bodies like the police can
+            use
+            it to track the locations where crime rates are rising and increase security on
+            those
+            locations.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <!-- Information -->
+        <div class="container" id="info">
+            <h3 class="heading">Instruction</h3>
+              <p>
+                After entering Overwatch, go to "Unsafe Zones" to know about unsafe places in
+                your city.<br> 
+                <ul>
+                  <li>To report a location as unsafe, visit :-"Unsafe Zones".</li>
+                  <li>If you want to post your experience about any unsafe place or if you want to
+                  read other peoples experiences visit :-"Stories".</li>
+                  <li>If you want to post your experience about an unsafe location but are worried for
+                  your safety and still want to help, just check "Post Anonymously". Overwatch does 
+                  not use individual account feature so that the responsible citizens cannot be tracked in
+                   any way possible.</li>
+                </ul>
+              </p>
+        </div>
+      </div>
+
+        <div class="container footer">
+          <img src="assets/logo.png">
+          <h2>Stay safe, Rest assured, because we are watching over you!</h2>
+        </div>
+        <p id="quote2">Stay Safe!</p>
+    </div>
+    <!-- OverWatch stats -->
+    <div class="main-right  animate__animated animate__slideInRight">
+      <h4>Overwatch Stats</h4>
+      <hr>
+      <div id="stats-container">
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/display.js" async defer></script>
+  <script>
+    // DISPLAYING OVWEWATCH STATS
+    const updateStats = async () => {
+      const request = await fetch(`https://overwatch-apis.herokuapp.com/count/`, {
+        method: 'GET'
+      })
+      const response = await request.json();
+      console.log(response);
+      statContainer.innerHTML = `<div class="stat-card">
+    <p> Users : <b>${response.users_count}</b><br>
+    User Experiences : <b>${response.stories_count}</b><br>
+    Unsafe Zones : <b> ${response.zones_count} </b></p>
+    </div>`
+    }
+    updateStats();
+  </script>
+</body>
+
+</html>

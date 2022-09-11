@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>OverWatch | Profile</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/all.css" />
+    <link rel="stylesheet" href="styles/profile.css" />
+  </head>
+  <body>
+    <div class="loader-container" id="loader-container">
+      <div class="loader">Loading...</div>
+    </div>
+    <!-- SIDEBAR -->
+
+    <div id="sidebar">
+      <img src="assets/icons/ham.png" id="menu-icon" />
+      <div id="sidebar-container">
+        <ul>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/home.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="index.html">Home</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/info.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="info.html#info"> Instructions</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/danger.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="index.html#map"> Unsafe Zones</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/posts.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="stories.html"> Stories</a></h4>
+            </div>
+          </li>
+          <li>
+            <div class="sidebar-item">
+              <img
+                src="assets/icons/about.png"
+                alt="icon"
+                class="siderbar-icon"
+              />
+              <h4><a href="info.html#about"> About</a></h4>
+            </div>
+          </li>
+        </ul>
+        <div id="profile">
+          <button>Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+
+    <div class="header">
+      <!-- <img src="assets/logot (2).png" alt="Logo" class="logo" /> -->
+      <h1 class="animate__animated animate__bounceInDown">User Profile</h1>
+    </div>
+
+    <!-- PSEUDOBODY  -->
+    <div class="pseudobody">
+      <div class="container first">
+        <h3 class="heading">Details</h3>
+        <div id="user-profile"></div>
+      </div>
+      <div class="container">
+        <h3 class="heading">Unsafe zones by you</h3>
+        <div id="zones"></div>
+      </div>
+      <div class="container">
+        <h3 class="heading">Stories by you</h3>
+        <div id="story"></div>
+        <p id="quote2">That's it for now. Stay Safe!</p>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/display.js" async defer></script>
+    <script src="scripts/profile.js" async defer></script>
+  </body>
+</html>
